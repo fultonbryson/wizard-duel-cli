@@ -1,0 +1,42 @@
+@import "./helpers/variables.scss";
+
+html {
+  font-size: 62.5%; // 1rem is 10px
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  font-weight: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app-wrapper {
+  background-color: $base-color;
+  height: 100vh;
+  width: 100vw;
+}
+
+@import "./helpers/mixins.scss";
+@import "./helpers/helpers.scss";
+
+@import "./primary/start.scss";
+@import "./primary/directory.scss";
+@import "./primary//join.scss";
+@import "./primary/host.scss";
+@import "./primary//lobby.scss";
+@import "./primary/match.scss";
+
+@import "./media-queries/mobile-start.scss";
+@import "./media-queries/mobile-directory.scss";
